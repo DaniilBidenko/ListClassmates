@@ -16,12 +16,12 @@ Widget build(BuildContext context) {
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
-          childAspectRatio: 6,
+          childAspectRatio: 7,
           ),
           itemCount: ClassmatesData.classData.length,
           itemBuilder: (BuildContext context, int index) {
             return Padding(
-              padding: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              padding: EdgeInsets.symmetric(vertical: 2,horizontal: 10),
               child: Container(
                 color : Colors.white,
                 child: Row(
@@ -44,7 +44,7 @@ Widget build(BuildContext context) {
                     Container(
                       width: 10,
                       height: 500,
-                      color: Colors.blue,
+                      color: Colors.red,
                       child: Text(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
