@@ -27,7 +27,11 @@ Widget build(BuildContext context) {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Flexible(
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Flexible(
                       child: 
                         Text(
                           '${ClassmatesData.classData[index].name}'
@@ -39,12 +43,16 @@ Widget build(BuildContext context) {
                             '${ClassmatesData.classData[index].age.toString()}'
                         )
                         ),
-                   Expanded(
+                      ]
+                      
+                    ),
+                    
+                   Flexible(
                     child: 
                     Container(
-                      width: 10,
+                      width: 75,
                       height: 500,
-                      color: Colors.red,
+                      color: Colors.blue,
                       child: Text(
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
